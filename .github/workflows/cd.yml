@@ -1,0 +1,14 @@
+name: 🚀 Test
+run-name: 🚀 TT
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy-with-environment:
+    environment: prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "hi"
